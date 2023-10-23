@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 40px;
+}
+
+.logo{
+    width: 40%;
+}
+
+.title{
+    font-size: 80px;
+    margin: 40px 0px 60px 0px;
+}
+
+.content{
+    width: 500px;
+}
+
+.title2{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.buttonlar{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+
+.btn{
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid lightgray;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.btn i{
+    font-size: 20px;
+    margin-right: 7px;
+}
+
+
+.cizgi{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ciz{
+    border: 1px solid black;
+    width: 100%;
+}
+
+
+.btn-google:hover{
+    background-color:rgba(247, 247, 252, 0.731) ;
+}
+
+.btn-apple:hover{
+    background-color:rgba(220, 220, 220, 0.779) ;
+}
+.btn-hesap{
+    background-color: #1d9bf0;
+    color: white;
+}
+.btn-hesap:hover{
+    background-color:#1375b6 ;
+}
+
+
+.policy{
+    font-size: 12px;
+    margin:-10px 0px 40px 0px;
+}
+
+
+.btn-giris{
+    color: #1375b6;
+}
+.btn-giris:hover{
+    background-color:rgb(237, 237, 249) ;
+}
+
+
+
+footer{
+    text-align: center;
+    line-height: 22px;
+    padding: 10px;
+}
+
+footer a,span{
+    text-decoration: none;
+    color: gray;
+    padding: 5px;
+    font-size: 13px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+
+@media (max-width:1000px){
+    main{
+        width: 65%;
+        margin: auto;
+    }
+    .container{
+        flex-direction: column;
+        align-items: start;
+        
+    }
+    .logo{
+        width: 70px;
+        
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+@media (max-width:700px){
+    main{
+       width: 100%;
+     
+    }
+    .content{
+        width: 100%;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
+
+
+@media (max-width:500px){
+    .container{
+        padding: 20px;
+    }
+    .title{
+        font-size: 50px;
+        margin: 20px 0px 30px 0px;
+    }
+    .buttonlar{
+        width: 100%;
+    }
+    .policy{
+        font-size: 12px;
+        margin: 0px;
+    }
+    span{
+        display: block;
+        text-align: center;
+    }
+}
